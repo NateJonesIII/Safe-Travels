@@ -9,14 +9,51 @@
     <!--  materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
  <link rel="stylesheet" href="./assets/css/style.css">
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
 
     <title>Safe Travels</title>
 </head>
 
 <body>
-    <h1>Safe Travels</h1>
+ 
+    <div class="container col s12">
+      <img src="https://www.apsf.org/wp-content/uploads/newsletters/2020/3502/coronavirus-covid-19.png" href="image" width="120px">
+        <h1 class="safetravels">Safe Travels</h1>
+       
+    </div>
+   <div class="container1 col s12">
 
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <form>
+          <input type="text" id="userInput" placeholder="Enter your City"/>
+          <button type="search" id="searchButton">Click Here</button>
+      </form>
+        <!--Materialize selector  -->
+    <div id="select" class="input-field col s12">
+      <select multiple>
+        <option value="" disabled selected >Choose your option</option>
+        <option value="1">Want to know what restirction are in your area?</option>
+        <option value="2">Find vaccination and testing sites near you.</option>
+        <option value="3">Here are the statistics in your are.</option>
+      </select>
+      <!-- <label>COVID-19 Updates</label> -->
+    </div><br>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+    <div class="googlemaps">
+        <div id="map">Google maps</div>
+    </div>
+   </div>
+      
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,6 +62,10 @@
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="./assets/js/js.js"></script>
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 
 
 </body>
