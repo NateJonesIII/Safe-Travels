@@ -8,13 +8,55 @@
 
     <!--  materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-
     <title>Safe Travels</title>
 </head>
 
 <body>
 
+    <div class="container col s12">
+        <img src="./assets/images/coronavirus-covid-19.png" href="image" width="120px">
+        <h1 class="safetravels">Safe Travels</h1>
+
+    </div>
+    <div class="container1 col s12">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Enter Location</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <form class="col s8 custom-form">
+                    <h4>City:</h4>
+                    <div class="inputContainer">
+                        <input class="validate" type="text" id="userInput" placeholder=" Enter your City" />
+                    </div>
+                    <div class="searchContainer">
+                        <button type="search" id="searchButton">Search</button>
+                    </div>
+                </form>
+                <!--Materialize selector  -->
+                <div id="select" class="input-field col s12">
+                    <select multiple>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Select for the restrictions in your area.</option>
+                        <option value="2">Select for vaccination and testing sites near you.</option>
+                        <option value="3">Select for stats in your area.</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enter</a>
+            </div>
+        </div>
+        <div class="mapContainer">
+            <div id="map">Google maps</div>
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript -->
