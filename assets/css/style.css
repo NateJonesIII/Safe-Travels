@@ -21,11 +21,13 @@ body {
   width      : 15%;
   border     : 1px solid black;
   align-items: center;
+  text-align: center;
 
 }
 
 #select {
-  width: 55%;
+  width: 100%;
+ 
 }
 
 #searchButton {
@@ -72,11 +74,11 @@ custom-form {
   font-size  : 30px;
   font-family: 'Lora', serif;
   flex       : 1;
-  order      : 1;
+  order      : 2;
 }
 
 #modalbutton {
-  order     : 2;
+  order     : 1;
   flex-basis: 20%;
   margin-top: 20px;
 
@@ -93,5 +95,42 @@ custom-form {
   padding        : 20px 50px;
   display        : flex;
   justify-content: space-evenly;
-  flex-wrap      : wrap;
+  flex-wrap      : row;
+}
+
+@media only screen and (max-width: 1024px) {
+  .div-layout{
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    
+  }
+   
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .div-layout{
+    flex-basis: 40%;
+    flex-wrap: wrap;
+  }
+   
+  
+}
+@media only screen and (max-width: 414px) {
+   
+  .div-layout{
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+  
+}
+@media only screen and (max-width: 375px) {
+  .div-layout{
+    flex-basis: 100%;
+   
+  }
+  .header{
+    width: 120%;
+  }
+  
 }
