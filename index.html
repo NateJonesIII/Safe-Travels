@@ -5,6 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
     <!--  materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -18,57 +21,56 @@
 </head>
 
 <body>
-
-    <div class="container col s12">
-        <img src="./assets/images/coronavirus-covid-19.png" href="image" width="120px">
+    <header class="header col s12 m12">
+        <img src="https://www.apsf.org/wp-content/uploads/newsletters/2020/3502/coronavirus-covid-19.png" href="image"
+            width="130px">
         <h1 class="safetravels">Safe Travels</h1>
+    </header>
 
-    </div>
-    <div class="container1 col s12">
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Enter Location</a>
+
+    <div class="div-layout col s12 m12 ">
+        <div id="modalbutton">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Click Here</a>
+        </div>
 
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
             <div class="modal-content">
-                <form class="col s8 custom-form">
-                    <h4>City:</h4>
-                    <div class="inputContainer">
-                        <input class="validate" type="text" id="userInput" placeholder=" Enter your City" />
-                    </div>
-                    <div class="searchContainer">
-                        <button type="search" id="searchButton">Search</button>
-                    </div>
+                <form>
+                    <input type="text" id="userInput" placeholder="Enter your City" />
+                    <button type="search" id="searchButton"></button>
                 </form>
                 <!--Materialize selector  -->
                 <div id="select" class="input-field col s12">
                     <select multiple>
                         <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Select for the restrictions in your area.</option>
-                        <option value="2">Select for vaccination and testing sites near you.</option>
-                        <option value="3">Select for stats in your area.</option>
+                        <option value="1">Want to know what restirction are in your area?</option>
+                        <option value="2">Find vaccination and testing sites near you.</option>
+                        <option value="3">Here are the statistics in your are.</option>
                     </select>
+                    <!-- <label>COVID-19 Updates</label> -->
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enter</a>
+                <a href="#!" class="modal-close waves-effect waves-orange btn-flat">Agree</a>
             </div>
         </div>
-        <div class="mapContainer">
+        <!--google map  -->
+        <div class="googlemaps">
             <div id="map">Google maps</div>
         </div>
-    </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGS7ppFfqvTChyVyl3o_4QXaxFB8hb-kE&callback=initMap"
-        type="text/javascript"></script>
-    <script src="./assets/js/js.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGS7ppFfqvTChyVyl3o_4QXaxFB8hb-kE&callback=initMap"
+            type="text/javascript"></script>
+        <script src="./assets/js/js.js"></script>
 
 </body>
 
