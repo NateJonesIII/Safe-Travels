@@ -63,16 +63,22 @@ custom-form {
 
 }
 
+.mapContainer {
+  width : 400px;
+  height: 400px;
+  border: 2px solid black;
+}
+
 #map {
-  height     : 100%;
-  border     : 2px solid black;
-  width      : 400px;
-  padding    : 10px;
-  text-align : center;
-  font-size  : 30px;
-  font-family: 'Lora', serif;
-  flex       : 1;
-  order      : 1;
+  height       : 100%;
+  /*border     : 2px solid black;
+  width        : 400px;
+  padding      : 10px;
+  text-align   : center;
+  font-size    : 30px;
+  font-family  : 'Lora', serif;
+  flex         : 1;
+  order        : 1; */
 }
 
 #modalbutton {
