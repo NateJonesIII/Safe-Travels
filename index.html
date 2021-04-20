@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -27,7 +28,9 @@
         <h1 class="safetravels">Safe Travels</h1>
     </header>
 
+   <div class="maincontainer">
 
+   
     <div class="div-layout col s12 m12 ">
         <div id="modalbutton">
             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Click Here</a>
@@ -38,8 +41,8 @@
             <div class="modal-content">
                 <form>
                     <input type="text" id="userInput" placeholder="Enter your City" />
-                    <!-- <button type="search" id="searchButton"></button> -->
-                </form>
+                   
+               
                 <!--Materialize selector  -->
                 <div id="select" class="input-field col s12">
                     <select multiple>
@@ -50,16 +53,18 @@
                     </select>
                     <!-- <label>COVID-19 Updates</label> -->
                 </div>
+            </form>
             </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect waves-orange btn-flat">Agree</a>
             </div>
         </div>
-        <!--google map  -->
-        <div class="googlemaps">
-            <div id="map">Google maps</div>
-        </div>
 
+        <!--google map  -->
+        <div class="mapContainer">
+            <div id="map"></div>
+        </div>
+    </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -68,7 +73,7 @@
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGS7ppFfqvTChyVyl3o_4QXaxFB8hb-kE&callback=initMap"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-a6D0sOzccD1ryQr0w6T-K8-g-YOHZik&callback=initMap"
             type="text/javascript"></script>
         <script src="./assets/js/js.js"></script>
 
