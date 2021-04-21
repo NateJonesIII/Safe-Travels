@@ -27,20 +27,27 @@
             width="130px">
         <h1 class="safetravels">Safe Travels</h1>
     </header>
+   
+   <div class="maincontainer">
 
-
+   
     <div class="div-layout col s12 m12 ">
-        <div id="modalbutton">
+        <div id="itemContainer" class="col s12">
+        <div class="row" id="modalbutton">
             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Click Here</a>
         </div>
-
+       <div class="row" id="infoContainer">
+         <div class="info" id="restrictions"></div>
+         <div class="info" id="testSites"></div>
+        <div class="info" id="stats"></div>
+       </div>
+    </div>
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
             <div class="modal-content">
                 <form>
                     <input type="text" id="userInput" placeholder="Enter your City" />
-                    <button type="search" id="searchButton"></button>
-                </form>
+                   
                 <!--Materialize selector  -->
                 <div id="select" class="input-field col s12">
                     <select multiple>
@@ -51,6 +58,7 @@
                     </select>
                     <!-- <label>COVID-19 Updates</label> -->
                 </div>
+            </form>
             </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect waves-orange btn-flat">Agree</a>
@@ -61,6 +69,8 @@
         <div class="mapContainer">
             <div id="map"></div>
         </div>
+    </div>
+</div>
 
 
         <!-- Optional JavaScript -->
@@ -73,7 +83,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-a6D0sOzccD1ryQr0w6T-K8-g-YOHZik&callback=initMap"
             type="text/javascript"></script>
         <script src="./assets/js/js.js"></script>
-
+     
 </body>
 
 </html>
