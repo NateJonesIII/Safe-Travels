@@ -17,13 +17,13 @@ var googleApiKey = "AIzaSyA-a6D0sOzccD1ryQr0w6T-K8-g-YOHZik";
 //Locations to be stored from covid-19 api lat, lng
 var locations = [];
 
-//var stringify= 
 
 $(document).ready(function () {
 
     $('.modal').modal();
     $("select").formSelect();
 });
+
 
 
   
@@ -79,3 +79,5 @@ var requesturl= ("https://www.trackcorona.live/api/cities/"+input)
  ;});
 
 })
+
+
