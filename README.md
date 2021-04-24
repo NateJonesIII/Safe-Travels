@@ -8,3 +8,10 @@ Project contributers: Nathaniel Jones https://github.com/NateJonesIII, Patrick D
 Our site currently utilizes Google maps and font API, TrackCorona API, and Materialize CSS for functionality and styling.
 
 Intial Page
+![](https://github.com/NateJonesIII/Safe-Travels/blob/NDJ-Branch/assets/images/Initial%20Page.PNG)
+
+Search Modal 
+![](https://github.com/NateJonesIII/Safe-Travels/blob/NDJ-Branch/assets/images/Search.PNG)
+
+Selecting Options
+![](https://github.com/NateJonesIII/Safe-Travels/blob/NDJ-Branch/assets/images/Options.PNG)
