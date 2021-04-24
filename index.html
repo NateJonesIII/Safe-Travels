@@ -31,6 +31,42 @@
    <div class="maincontainer">
 
    
+    <!-- <div class="div-layout col s12 m12 ">
+        <div id="itemContainer" class="col s12">
+        <div class="row" id="modalbutton">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Click Here</a>
+        </div>
+       <div class="row" id="infoContainer">
+         <div class="info" id="restrictions"></div>
+         <div class="info" id="testSites"></div>
+        <div class="info" id="stats"></div>
+       </div>
+    </div> -->
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <form>
+                    <input type="text" id="userInput" placeholder="Enter your City" />
+                   
+                <!--Materialize selector  -->
+                <div id="select" class="input-field col s12">
+                    <select multiple>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option id="option1" value="1">Want to know what restrictions are in your area?</option>
+                        <option id="option2" value="2">Find vaccination and testing sites near you.</option>
+                        <option id="option3" value="3">Here are the statistics in your area.</option>
+                    </select>
+                    <!-- <label>COVID-19 Updates</label> -->
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-orange btn-flat">Agree</a>
+            </div>
+        </div>
+
+
+   
     <div class="div-layout col s12 m12 ">
         <div id="itemContainer" class="col s12">
         <div class="row" id="modalbutton">
@@ -73,7 +109,21 @@
 </div>
 
 
+        <!--google map  -->
+        <!-- <div class="mapContainer">
+            <div id="map"></div>
+        </div>
+    </div>
+</div> -->
+
+
+<!--<div>Powered by www.trackcorona.live</div>-!>
+
+
+        <!- Optional JavaScript -->
+
         <!-- Optional JavaScript -->
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -87,3 +137,4 @@
 </body>
 
 </html>
+
